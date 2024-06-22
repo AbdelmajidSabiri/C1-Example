@@ -24,6 +24,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .logo{
     width: 140px;
@@ -37,6 +38,7 @@ nav ul li a{
     color: #333;
     font-weight:  400;
 }
+
 .log-btn{
     color: #333;
     margin-right: 15px;
