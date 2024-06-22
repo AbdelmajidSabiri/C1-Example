@@ -138,8 +138,10 @@ button {
     overflow: hidden;
     font-size: 15px;
     cursor: pointer;
-    
 
+  }
+  .button.animation{
+    animation-delay: 1s;
   }
   
   .icon {
@@ -199,11 +201,13 @@ button {
 
 .content h1{
     font-size: 40px;
+    font-weight: 800;
     color: #222;
 }
 .content p{
-    margin: 10px 0 30px;
+    margin: 10px 0 20px;
     color: #333;
+    animation-delay: 0.5s ;
 }
 
 .image{
@@ -212,5 +216,20 @@ button {
     bottom: 0;
     right: 10%;
     top: 13%;
-    
+
+}
+.image.animation{
+    animation-delay: 1.5s;
+}
+.animation{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
